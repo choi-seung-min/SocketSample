@@ -10,7 +10,7 @@ import java.net.URISyntaxException
 class ChatApplication: Application(){
     private var mSocket: Socket? = null
 
-    fun any() {
+    init {
         try {
             mSocket = IO.socket(Constants.CHAT_SERVER_URL)
         } catch (e: URISyntaxException){
