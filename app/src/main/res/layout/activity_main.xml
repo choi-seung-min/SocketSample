@@ -6,7 +6,9 @@
     tools:context=".MainActivity">
 
     <fragment
+        class="com.example.socketsample.MainFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:id="@+id/asd" />
 
 </FrameLayout>

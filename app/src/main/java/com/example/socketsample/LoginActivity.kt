@@ -43,6 +43,11 @@ class LoginActivity : Activity(){
         mSocket.on("login", onLogin)
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        mSocket.off("login", onLogin)
+    }
+
     private fun attemptLogin(){
         username_input.error = null
 
